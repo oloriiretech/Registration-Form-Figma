@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div id="media">
+            <p id="social">Social media shared today, tomorrow </p><br>
+            <p id="location">or by location</p>
+        </div>
+        <div>
+            <img src="img.png/android view img.png" alt="android view">
+            <img id="slider" src="img.png/Slider dots.png" alt="Slider dots">
+        </div>
+    </nav>
+    <main id="main">
+        <div id="heading">
+            <div id="capzul"><img src="img.png/Capzul.jpeg" alt="Capzul" width="25px">
+                <p>Capzul</p>
+            </div>
+            <h3>Create account</h3>
+            <h4>For business bond or celebrity</h4>
+        </div>
+        <form action="connect.php" method="post">
+            <div class="name">
+                <label for="firstName">First Name</label>
+                <input type="text" class="words" class="inputname" required>
+            </div>
+            <div class="name">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="words" class="inputname" required>
+            </div>
+            <div class="name">
+                <label for="email">Email or Phone number</label>
+                <input type="text" class="words" required>
+            </div>
+            <div class="name">
+                <label for="dateOfBirth">Date Of Birth (MM/DD/YY)</label>
+                <input type="date" class="words" required>
+            </div>
+            <div class="name">
+                <label for="password">Password</label>
+                <input type="text" class="words" id="password"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onchange="confirmPassword()" required>
+            </div>
+            <div class="name">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="text" class="words" id="cPassword" onchange="confirmPassword()" required>
+                <p id="response"></p>
+            </div>
+        </form>
+        <div>
+            <div class="rempass">
+                <input type="checkbox" id="remember">
+                <label for="">Remember me</label>
+            </div>
+            <div class="rempass"><a href="" id="forgetPassword">Forget password?</a></div>
+            <div id="agree-terms">
+                <input type="checkbox">
+                <label for="">I agree to all the <a href="">terms</a> and <a href="">privacy policy</a></label>
+            </div>
+        </div>
+        <div class="button">
+            <button class="button" type="submit" id="createAccount" onclick="" href="#password">Create account</button>
+            <button class="button" type="submit" id="sign-in" onclick=""><img src="img.png/Google logo.png" alt="G-logo"
+                    height="20rem"> Sign in with google</button>
+        </div>
+        <p id="link">Don't have an account? <a href="">log in</a></p>
+        <footer>
+            <img src="img.png/google play.png" alt="google play" id="g-play">
+            <img src="img.png/app-store.png" alt="app-store" id="g-store">
+        </footer>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
