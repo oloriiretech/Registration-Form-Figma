@@ -25,6 +25,13 @@ body:hover {
     padding: 5%;
 }
 
+
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        display: none;
+    }
+}
+
 #nav-bar #slider {
     margin-left: 45%;
     margin-top: 20px;
@@ -34,6 +41,11 @@ body:hover {
     color: #00000066;
     background-color: #FFFFFF;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
 }
 
 h3 {
@@ -167,11 +179,11 @@ footer img {
     margin-bottom: 10px;
 }
 
+
 @media screen and (max-width: 768px) {
     #main {
-        flex-direction: column;
         margin: 50px 20px;
-        width: 50%;
+        width: 100%;
     }
 
     .rempass {
@@ -181,11 +193,9 @@ footer img {
 }
 
 @media screen and (max-width: 480px) {
-
     #main {
-        flex-direction: column;
         margin: 35px 10px;
-        width: 50%;
+        width: 100%;
     }
 
     .rempass {
@@ -194,33 +204,21 @@ footer img {
     }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     #main {
-        flex-direction: column;
         margin: 45px 15px;
-        width: 40%;
+        width: 100%;
     }
 
     img {
         width: 50%;
         height: auto;
     }
+}
 
-    @media (max-width:1024px) {
-        #main {
-            flex-direction: column;
-        }
-
-        .rempass {
-            display: block;
-            text-align: center;
-        }
-    }
-
-    @media (min-width:1025px) {
-
-        #main {
-            flex-direction: column;
-        }
+@media (min-width: 1025px) {
+    #main {
+        width: 80%;
+        margin: 0 auto;
     }
 }
